@@ -22,7 +22,9 @@
 
 This project is a full-stack web application that uses a machine learning model to classify celestial objects from NASA's Kepler mission. It can predict whether an object is a \*\*Confirmed Exoplanet\*\*, a \*\*Planetary Candidate\*\*, or a \*\*False Positive\*\* based on transit photometry data. The project includes a data analysis notebook, a trained classification model, a Flask REST API, and an interactive web interface.
 
+## Demo 🎥
 
+![Exoplanet Hunter AI Demo](demo.gif)
 
 \## Features
 
