@@ -2,23 +2,25 @@
 
 
 
-\## Table of Contents
+## Table of Contents
 
-\- \[Project Overview](#project-overview)
+ - \[Project Overview](#project-overview)
 
-\- \[Features](#features)
+ - \[Demo](#demo)
 
-\- \[Tech Stack](#tech-stack)
+ - \[Features](#features)
 
-\- \[Setup and Installation](#setup-and-installation)
+ - \[Tech Stack](#tech-stack)
 
-\- \[Usage](#usage)
+ - \[Setup and Installation](#setup-and-installation)
 
-\- \[Future Improvements](#future-improvements)
+ - \[Usage](#usage)
+
+ - \[Future Improvements](#future-improvements)
 
 
 
-\## Project Overview
+## Project Overview
 
 This project is a full-stack web application that uses a machine learning model to classify celestial objects from NASA's Kepler mission. It can predict whether an object is a \*\*Confirmed Exoplanet\*\*, a \*\*Planetary Candidate\*\*, or a \*\*False Positive\*\* based on transit photometry data. The project includes a data analysis notebook, a trained classification model, a Flask REST API, and an interactive web interface.
 
@@ -26,27 +28,27 @@ This project is a full-stack web application that uses a machine learning model 
 
 ![Exoplanet Hunter AI Demo](demo.gif)
 
-\## Features
+## Features
 
-\- \*\*Exoplanet Classification:\*\* Core feature - classifies data points using a trained Machine Learning model (Random Forest/XGBoost).
+ - \*\*Exoplanet Classification:\*\* Core feature - classifies data points using a trained Machine Learning model (Random Forest/XGBoost).
 
-\- \*\*Web Interface:\*\* A clean, modern user interface for submitting data and viewing live predictions.
+ - \*\*Web Interface:\*\* A clean, modern user interface for submitting data and viewing live predictions.
 
-\- \*\*REST API:\*\* A backend Flask API that serves the model's predictions.
+ - \*\*REST API:\*\* A backend Flask API that serves the model's predictions.
 
-\- \*\*Professional Structure:\*\* Organized into a standard project structure with separation of concerns.
+ - \*\*Professional Structure:\*\* Organized into a standard project structure with separation of concerns.
 
 
 
-\## Tech Stack
+## Tech Stack
 
-\- \*\*Backend:\*\* Python, Flask, Scikit-learn, Pandas, NumPy, XGBoost
+ - \*\*Backend:\*\* Python, Flask, Scikit-learn, Pandas, NumPy, XGBoost
 
-\- \*\*Frontend:\*\* HTML, CSS, JavaScript, Bootstrap 5
+ - \*\*Frontend:\*\* HTML, CSS, JavaScript, Bootstrap 5
 
-\- \*\*Development:\*\* Jupyter Lab, Git \& GitHub
+ - \*\*Development:\*\* Jupyter Lab, Git \& GitHub
 
-\- \*\*Data Source:\*\* NASA Exoplanet Archive (Kepler Objects of Interest)
+ - \*\*Data Source:\*\* NASA Exoplanet Archive (Kepler Objects of Interest)
 
 
 
@@ -69,67 +71,61 @@ exoplanet-hunter/
 
 
 
-\## Setup and Installation
+## Setup and Installation
 
 Follow these steps to run the project on your local machine.
 
 
 
-1\. \*\*Clone the repository:\*\*
+1\. *\*Clone the repository:\*\*
 
-&nbsp;  ```bash
 
-&nbsp;  git clone https://github.com/MoahamedMamdouh/exoplanet-hunter.git
+ -\ git clone https://github.com/MoahamedMamdouh/exoplanet-hunter.git
 
-&nbsp;  cd exoplanet-hunter
-
-&nbsp;  ```
+ -\ cd exoplanet-hunter
 
 
 
-2\. \*\*Create and activate a virtual environment:\*\*
 
-&nbsp;  ```bash
 
-&nbsp;  # For Windows
-
-&nbsp;  python -m venv venv
-
-&nbsp;  .\\venv\\Scripts\\activate
-
-&nbsp;  ```
+2\. *\*Create and activate a virtual environment:\*\*
 
 
 
-3\. \*\*Install dependencies:\*\*
 
-&nbsp;  ```bash
+ -\ python -m venv venv
 
-&nbsp;  pip install -r requirements.txt
-
-&nbsp;  ```
+ -\ .\\venv\\Scripts\\activate
 
 
 
-4\. \*\*Run the application:\*\*
 
-&nbsp;  ```bash
-
-&nbsp;  python app.py
-
-&nbsp;  ```
+3\. *\*Install dependencies:\*\*
 
 
 
-5\. \*\*Access the application:\*\*
-
-&nbsp;  Open your web browser and navigate to `http://127.0.0.1:5000/`.
+ -\ pip install -r requirements.txt
 
 
 
-\## Usage
 
-Explain how a user interacts with your project. You can add a screenshot here after you upload the project to GitHub.
+4\. *\*Run the application:\*\*
+
+
+ -\ python app.py
+
+
+
+
+5\. *\*Access the application:\*\*
+
+ -\ Open your web browser and navigate to `http://127.0.0.1:5000/`.
+
+
+
+## Usage
+
+
 
 
 
