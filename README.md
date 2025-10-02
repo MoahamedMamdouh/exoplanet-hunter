@@ -1,4 +1,4 @@
-\# Exoplanet Hunter AI 🪐
+## Exoplanet Hunter AI 🪐
 
 
 
@@ -30,25 +30,25 @@ This project is a full-stack web application that uses a machine learning model 
 
 ## Features
 
- - \*\*Exoplanet Classification:\*\* Core feature - classifies data points using a trained Machine Learning model (Random Forest/XGBoost).
+ - *\*Exoplanet Classification:\*\* Core feature - classifies data points using a trained Machine Learning model (Random Forest/XGBoost).
 
- - \*\*Web Interface:\*\* A clean, modern user interface for submitting data and viewing live predictions.
+ - *\*Web Interface:\*\* A clean, modern user interface for submitting data and viewing live predictions.
 
- - \*\*REST API:\*\* A backend Flask API that serves the model's predictions.
+ - *\*REST API:\*\* A backend Flask API that serves the model's predictions.
 
- - \*\*Professional Structure:\*\* Organized into a standard project structure with separation of concerns.
+ - *\*Professional Structure:\*\* Organized into a standard project structure with separation of concerns.
 
 
 
 ## Tech Stack
 
- - \*\*Backend:\*\* Python, Flask, Scikit-learn, Pandas, NumPy, XGBoost
+ - *\*Backend:\*\* Python, Flask, Scikit-learn, Pandas, NumPy, XGBoost
 
- - \*\*Frontend:\*\* HTML, CSS, JavaScript, Bootstrap 5
+ - *\*Frontend:\*\* HTML, CSS, JavaScript, Bootstrap 5
 
- - \*\*Development:\*\* Jupyter Lab, Git \& GitHub
+ - *\*Development:\*\* Jupyter Lab, Git \& GitHub
 
- - \*\*Data Source:\*\* NASA Exoplanet Archive (Kepler Objects of Interest)
+ - *\*Data Source:\*\* NASA Exoplanet Archive (Kepler Objects of Interest)
 
 
 
@@ -80,9 +80,9 @@ Follow these steps to run the project on your local machine.
 1\. *\*Clone the repository:\*\*
 
 
- -\ git clone https://github.com/MoahamedMamdouh/exoplanet-hunter.git
+ -git clone https://github.com/MoahamedMamdouh/exoplanet-hunter.git
 
- -\ cd exoplanet-hunter
+ -cd exoplanet-hunter
 
 
 
@@ -93,9 +93,9 @@ Follow these steps to run the project on your local machine.
 
 
 
- -\ python -m venv venv
+ -python -m venv venv
 
- -\ .\\venv\\Scripts\\activate
+ -.\\venv\\Scripts\\activate
 
 
 
@@ -104,7 +104,7 @@ Follow these steps to run the project on your local machine.
 
 
 
- -\ pip install -r requirements.txt
+ -pip install -r requirements.txt
 
 
 
@@ -112,14 +112,14 @@ Follow these steps to run the project on your local machine.
 4\. *\*Run the application:\*\*
 
 
- -\ python app.py
+ -python app.py
 
 
 
 
 5\. *\*Access the application:\*\*
 
- -\ Open your web browser and navigate to `http://127.0.0.1:5000/`.
+ -Open your web browser and navigate to `http://127.0.0.1:5000/`.
 
 
 
