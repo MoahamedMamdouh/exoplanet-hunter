@@ -58,7 +58,7 @@ Follow these steps to run the project on your local machine.
 
 &nbsp;  ```bash
 
-&nbsp;  git clone \[https://github.com/](https://github.com/)\[YOUR\_GITHUB\_USERNAME]/exoplanet-hunter.git
+&nbsp;  git clone https://github.com/MoahamedMamdouh/exoplanet-hunter.git
 
 &nbsp;  cd exoplanet-hunter
 
