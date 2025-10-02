@@ -1,0 +1,9 @@
+/* We use this to vertically center our main content and set a max-width */
+.form-container {
+  max-width: 500px;
+  padding: 1rem;
+}
+
+#result {
+    font-weight: bold;
+}

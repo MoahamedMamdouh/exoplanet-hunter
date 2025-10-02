@@ -1,0 +1,14 @@
+# Virtual Environment
+# This is the folder with all your installed packages. It should not be on GitHub.
+venv/
+.venv/
+
+# Python cache files
+# These are temporary files Python creates when it runs your code.
+__pycache__/
+*.pyc
+
+# IDE / Editor specific settings
+# These are configuration files for your personal editor setup.
+.vscode/
+.idea/
