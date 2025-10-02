@@ -50,6 +50,25 @@ This project is a full-stack web application that uses a machine learning model 
 
 
 
+## Project Structure
+
+exoplanet-hunter/
+├── ml_models/               # Stores the serialized ML model and preprocessing objects
+├── notebooks/               # Contains the Jupyter Notebook for EDA and model experimentation
+├── static/                  # Frontend assets (CSS, JavaScript)
+│   ├── css/
+│   │   └── style.css
+│   └── js/
+│       └── main.js
+├── templates/               # HTML templates for the Flask application
+│   └── index.html
+├── .gitignore               # Specifies which files and folders for Git to ignore
+├── app.py                   # The main Flask application script (backend)
+├── README.md                # Project documentation (this file)
+└── requirements.txt         # List of Python package dependencies
+
+
+
 \## Setup and Installation
 
 Follow these steps to run the project on your local machine.
