@@ -1,0 +1,57 @@
+{
+    "classification_report": {
+        "CANDIDATE": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 992.0
+        },
+        "CONFIRMED": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 1983.0
+        },
+        "FALSE POSITIVE": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 2304.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 5279.0
+        },
+        "weighted avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 5279.0
+        }
+    },
+    "confusion_matrix": [
+        [
+            992,
+            0,
+            0
+        ],
+        [
+            0,
+            1983,
+            0
+        ],
+        [
+            0,
+            0,
+            2304
+        ]
+    ],
+    "class_labels": [
+        "CANDIDATE",
+        "CONFIRMED",
+        "FALSE POSITIVE"
+    ]
+}

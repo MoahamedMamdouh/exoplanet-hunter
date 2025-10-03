@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light"> <head>
+<html lang="en" data-bs-theme="light">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exoplanet Hunter AI</title>
@@ -7,7 +9,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
         crossorigin="anonymous">
-
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
@@ -16,8 +17,8 @@
     <main class="form-container w-100 m-auto">
         <div class="card p-4 shadow">
             <h1 class="h3 mb-3 fw-normal text-center">🪐 Exoplanet Hunter AI</h1>
+            
             <form id="prediction-form">
-                
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <label for="koi_fpflag_co" class="form-label">Contamination Flag</label>
@@ -28,25 +29,72 @@
                         <input type="number" class="form-control" id="koi_fpflag_ss" value="0" required>
                     </div>
                 </div>
-
                 <div class="mb-3">
                     <label for="koi_period" class="form-label">Orbital Period [days]</label>
                     <input type="number" step="any" class="form-control" id="koi_period" value="9.5" required>
                 </div>
-
                 <div class="mb-3">
                     <label for="koi_prad" class="form-label">Planetary Radius [Earth radii]</label>
                     <input type="number" step="any" class="form-control" id="koi_prad" value="2.26" required>
                 </div>
-
                 <button class="btn btn-primary w-100 py-2 mt-2" type="submit">Classify</button>
+                <button type="button" class="btn btn-outline-secondary w-100 py-2 mt-2" data-bs-toggle="modal" data-bs-target="#statsModal">
+                  View Model Performance
+                </button>
             </form>
-            <div id="result" class="mt-4 text-center h5">
-                </div>
-        </div>
-    </main>
 
+            <div id="result" class="mt-4 text-center h5"></div>
+        </div>
+
+        <div class="card p-4 shadow mt-4">
+            <h2 class="h4 mb-3 fw-normal text-center">⚙️ Hyperparameter Tuning</h2>
+            <p class="text-muted text-center small">Experiment with model settings and see how it affects performance. This may take a moment.</p>
+            
+            <form id="retrain-form">
+                <div class="mb-3">
+                    <label for="n_estimators" class="form-label">Number of Trees (n_estimators)</label>
+                    <input type="number" class="form-control" id="n_estimators" value="100" min="10" max="500" step="10" required>
+                </div>
+                <div class="mb-3">
+                    <label for="max_depth" class="form-label">Max Tree Depth (max_depth)</label>
+                    <input type="number" class="form-control" id="max_depth" value="10" min="2" max="50" required>
+                </div>
+                <button class="btn btn-success w-100 py-2 mt-2" type="submit">Retrain & Evaluate</button>
+            </form>
+
+            <div id="retrain-result" class="mt-4"></div>
+        </div>
+      <div class="card p-4 shadow mt-4">
+    <h2 class="h4 mb-3 fw-normal text-center">📥 Ingest New Data</h2>
+    <p class="text-muted text-center small">Upload a labeled CSV file to add new data to the dataset and retrain the primary model.</p>
+    <form id="upload-form" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="new_data_file" class="form-label">New Labeled Data (.csv)</label>
+            <input class="form-control" type="file" id="new_data_file" name="new_data_file" accept=".csv" required>
+        </div>
+        <button class="btn btn-warning w-100 py-2 mt-2" type="submit">Upload and Retrain</button>
+    </form>
+    <div id="upload-result" class="mt-4 text-center">
+        </div>
+     </div>
+    </main>
+    
+    <div class="modal fade" id="statsModal" tabindex="-1" aria-labelledby="statsModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="statsModalLabel">Model Performance Statistics</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="stats-modal-body">Loading stats...</div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
-
 </html>
