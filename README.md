@@ -33,27 +33,37 @@ The solution is an end-to-end machine learning system consisting of a Python-bas
 
 ## Project Structure
 exoplanet-hunter/
+
+
 ├── ml_models/               # Stores the serialized ML model and preprocessing objects
+
 ├── notebooks/               # Contains the Jupyter Notebook for EDA and model experimentation
+
 ├── scripts/                 # Holds the standalone model training script
+
 ├── static/                  # Frontend assets (CSS, JavaScript)
+
 ├── templates/               # HTML templates for the Flask application
+
 ├── .gitignore               # Specifies files for Git to ignore
+
 ├── app.py                   # The main Flask application script (backend)
+
 ├── README.md                # Project documentation (this file)
+
 └── requirements.txt         # Python package dependencies
 
 ## Setup and Installation
+
 Follow these steps to run the project on your local machine.
 
 1. *Clone the repository:*
    
-   git clone [https://github.com/MoahamedMamdouh/exoplanet-hunter.git](https://github.com/MoahamedMamdouh/exoplanet-hunter.git)
+   git clone [https://github.com/MoahamedMamdouh/exoplanet-hunter.git]
+
    cd exoplanet-hunter
 
 2.*Create and activate a virtual environment:*
-
-   # For Windows
 
    python -m venv venv
 
